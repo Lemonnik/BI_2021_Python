@@ -11,9 +11,11 @@ def check_num(num):
 
 
 def main():
+    print('Welcome to this simple calculator.')
+    print('\nType "exit" to end programm\n')
     while True:
         # число 1
-        num1 = input()
+        num1 = input('Number 1: ')
         if num1 == 'exit':  # не придумал ничего лучше
             break
         elif not check_num(num1):
@@ -21,7 +23,7 @@ def main():
             continue
 
         # оператор
-        operator = input()
+        operator = input('Operator (+-*/): ')
         if operator == 'exit':
             break
         elif operator not in ['+', '-', '*', '/']:
@@ -29,7 +31,7 @@ def main():
             continue
 
         # число 2
-        num2 = input()
+        num2 = input('Number 2: ')
         if num2 == 'exit':
             break
         elif not check_num(num2):
@@ -38,7 +40,8 @@ def main():
 
         # результат
         result = calculate(num1, num2, operator)
-        print(result)
+        print(f'{num1} {operator} {num2} = ', result)
+        print('\n')
 
 
 
