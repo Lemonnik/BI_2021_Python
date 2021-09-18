@@ -1,5 +1,16 @@
 def calculate(num1, num2, operator):
-    return eval(num1 + operator + num2)
+    # проверка деления на ноль
+    if (operator == '/') and (num2 == 0):
+        return float('inf')
+
+    operators = {
+                 '+': num1+num2,
+                 '-': num1-num2,
+                 '*': num1*num2,
+                 '/': num1/num2
+                 }
+
+    return operators[operator]
 
 
 def check_num(num):
@@ -39,7 +50,7 @@ def main():
             continue
 
         # результат
-        result = calculate(num1, num2, operator)
+        result = calculate(float(num1), float(num2), operator)
         print(f'{num1} {operator} {num2} = ', result)
         print('\n')
 
