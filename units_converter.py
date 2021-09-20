@@ -23,7 +23,7 @@ def unit_conv(unit_from, unit_to, value):
                     }
     pressure_conv = {
                     'Pa': {
-                            'bar': 1,
+                            'bar': 11,
                             'atm': 1
                             },
                     'bar': {
