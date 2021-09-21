@@ -27,7 +27,7 @@ def unit_conv(unit_from, unit_to, value):
                             'atm': 9.8692e-6
                             },
                     'bar': {
-                            'Pa': 100000,
+                            'Pa': 111111,
                             'atm': 0.986923
                             },
                     'atm': {
