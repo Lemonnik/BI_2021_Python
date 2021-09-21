@@ -23,16 +23,16 @@ def unit_conv(unit_from, unit_to, value):
                     }
     pressure_conv = {
                     'Pa': {
-                            'bar': 11,
-                            'atm': 1
+                            'bar': 1e-5,
+                            'atm': 9.8692e-6
                             },
                     'bar': {
-                            'Pa': 1,
-                            'atm': 1
+                            'Pa': 100000,
+                            'atm': 0.986923
                             },
                     'atm': {
-                            'Pa': 1,
-                            'bar': 1
+                            'Pa': 101325,
+                            'bar': 1.01325
                             }
                     }
 
