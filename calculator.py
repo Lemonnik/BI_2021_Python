@@ -15,7 +15,7 @@ def calculate(num1, num2, operator):
 
 def check_num(num):
     try:
-        float(num)
+        _ = float(num)
     except:
         return False
     return True
@@ -55,6 +55,5 @@ def main():
         print('\n')
 
 
-
-if __name__=='__main__':
+if __name__ == '__main__':
     main()
