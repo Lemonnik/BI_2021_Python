@@ -16,7 +16,7 @@ def calculate(num1, num2, operator):
 def check_num(num):
     try:
         _ = float(num)
-    except:
+    except ValueError:
         return False
     return True
 
