@@ -88,6 +88,9 @@ class Dna(_SeqBaseClass):
 
         self._possible_letters = ('A', 'T', 'G', 'C')
 
+    def __repr__(self):
+        return f"Dna('{self.sequence}')"
+
     def transcribe(self):
         '''
         Позволяет транскрибировать последовательность ДНК
@@ -116,3 +119,5 @@ class Rna(_SeqBaseClass):
 
         self._possible_letters = ('A', 'U', 'G', 'C')
 
+    def __repr__(self):
+        return f"Rna('{self.sequence}')"
